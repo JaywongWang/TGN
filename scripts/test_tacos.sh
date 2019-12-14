@@ -1,0 +1,1 @@
+python test.py --dataset="tacos" --max_sentence_len=10 --num_anchors=32 --eval_batch_size=1000 --eval_batch_num=100000 --nms_threshold=0.3 --feature_to_second=1 --init_from="checkpoints/1/epoch84_rec12.66_16_lr0.000010.ckpt" --train_id=1 --gpu_id=6

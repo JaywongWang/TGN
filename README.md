@@ -27,8 +27,11 @@ sh download_features.sh
 
 3. Download trained models.
 [TACoS]()
+
 [Charades-STA]()
+
 [ActivityNet-Captions]()
+
 Put them in the corresponding `./checkpoints/{DATASET}/` .
 
 4. Data Preprocessing (Optional)
@@ -37,7 +40,9 @@ cd datasets/tacos/
 sh prepare_data.sh
 ```
 Then copy the generated data in `./data/save/` .
+
 Use correspondig scripts for preparing data for other datasets.
+
 You may skip this procedure as the prepared data is already saved in `./datasets/{DATASET}/data/save/` .
 
 ### Testing and Evaluation
@@ -47,6 +52,7 @@ sh scripts/test_tacos.sh
 sh scripts/eval_tacos.sh
 ```
 Use corresponding scripts for testing or evaluating for other datasets.
+
 The predicted results are also provided in `./results/{DATASET}/` .
 
 ### Training
