@@ -26,13 +26,15 @@ sh download_features.sh
 ```
 
 3. Download trained models.
+
+Download and put the checkpoints in corresponding `./checkpoints/{DATASET}/` .
+
 [TACoS]()
 
 [Charades-STA]()
 
 [ActivityNet-Captions]()
 
-Put them in the corresponding `./checkpoints/{DATASET}/` .
 
 4. Data Preprocessing (Optional)
 ``` shell
