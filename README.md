@@ -1,2 +1,2 @@
 # TGN
-Tensorflow Implementation of the paper "Temporally Grounding Natural Sentence in Video"
+Tensorflow Implementation of the EMNLP-2018 paper "Temporally Grounding Natural Sentence in Video"
