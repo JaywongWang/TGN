@@ -25,16 +25,17 @@ sh download_features.sh
 cd datastes/activitynet_captions/features/
 sh download_features.sh
 ```
+We decode TACoS/Charades videos using `fps=16` and extract C3D (fc6) features for each non-overlap 16-frame snippet. Therefore, each feature corresponds to 1-second snippet. For ActivityNet, each feature corresponds to 2-second snippet.
 
 3. Download trained models.
 
 Download and put the checkpoints in corresponding `./checkpoints/{DATASET}/` .
 
-[TACoS]()
+[TACoS](https://drive.google.com/file/d/15N8mVJTqMKK8hUZ2uV6RyXBNuIArl8kz/view?usp=sharing)
 
-[Charades-STA]()
+[Charades-STA](https://drive.google.com/file/d/1NwFWfCJ3uSAccWrTLm8sPQMux0lUIRVD/view?usp=sharing)
 
-[ActivityNet-Captions]()
+[ActivityNet-Captions](https://drive.google.com/file/d/1MSLZ4nKEhUArKLygt_EG8lE5aB0rAqhB/view?usp=sharing)
 
 
 4. Data Preprocessing (Optional)
