@@ -17,14 +17,15 @@ sh download_glove.sh
 ```
 
 2. Download dataset features.
-``` shell
-cd datasets/tacos/features/
-sh download_features.sh
-cd datasets/charades/features/
-sh download_features.sh
-cd datastes/activitynet_captions/features/
-sh download_features.sh
-```
+
+[TACoS](https://drive.google.com/file/d/13JLnFhSzi8MPRzOG2Ao_q-J5-T5tewcg/view?usp=sharing)
+
+[Charades-STA](https://pan.baidu.com/s/1ODW4JIXfCCIbozPcaD_-UA)
+
+[ActivityNet-Captions]()
+
+Put the feature hdf5 file in the corresponding directory `./datasets/{DATASET}/features/`
+
 We decode TACoS/Charades videos using `fps=16` and extract C3D (fc6) features for each non-overlap 16-frame snippet. Therefore, each feature corresponds to 1-second snippet. For ActivityNet, each feature corresponds to 2-second snippet.
 
 3. Download trained models.
