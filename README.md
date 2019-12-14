@@ -4,6 +4,7 @@ Tensorflow Implementation of the EMNLP-2018 paper [Temporally Grounding Natural 
 ![alt text](method.png)
 
 ### Requirements
+python 2.7
 ``` bash
 pip install -r requirements.txt
 ```
