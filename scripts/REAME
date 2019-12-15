@@ -1,3 +1,0 @@
-train*.sh: train a model
-test*.sh: test a model and generate result file
-eval*.sh: eval a result file
