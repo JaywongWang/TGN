@@ -22,7 +22,7 @@ sh download_glove.sh
 
 [Charades-STA](https://pan.baidu.com/s/1ODW4JIXfCCIbozPcaD_-UA)
 
-[ActivityNet-Captions]()
+[ActivityNet-Captions](https://pan.baidu.com/s/1W9S7_nHf3nzDm1TDjm0YBA)
 
 Put the feature hdf5 file in the corresponding directory `./datasets/{DATASET}/features/`
 
