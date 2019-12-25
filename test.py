@@ -13,10 +13,10 @@ import tensorflow as tf
 import sys
 
 # set default encoding
-reload(sys)
-sys.setdefaultencoding('utf-8')
+#reload(sys)
+#sys.setdefaultencoding('utf-8')
 
-np.set_printoptions(threshold='nan')
+#np.set_printoptions(threshold='nan')
 
 
 def test(options):
@@ -66,7 +66,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     options = default_options()
     for key, value in options.items():
-        parser.add_argument('--%s' % key, dest=key, type=type(value), default=None)
+        if type(value) == bool:
+            parser.add_argument('--%s' % key, action='store_true')
+        else:
+            parser.add_argument('--%s' % key, dest=key, type=type(value), default=None)
     args = parser.parse_args()
     args = vars(args)
     for key, value in args.items():

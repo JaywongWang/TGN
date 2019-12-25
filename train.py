@@ -14,8 +14,8 @@ from util import evaluation_metric_util, mkdirs
 import sys
 
 # set default encoding
-reload(sys)
-sys.setdefaultencoding('utf-8')
+#reload(sys)
+#sys.setdefaultencoding('utf-8')
 
 
 def evaluation_metric(options, data_provision, sess, inputs, outputs, split='val'):
@@ -251,7 +251,10 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     options = default_options()
     for key, value in options.items():
-        parser.add_argument('--%s' % key, dest=key, type=type(value), default=None)
+        if type(value) == bool:
+            parser.add_argument('--%s' % key, action='store_true')
+        else:
+            parser.add_argument('--%s' % key, dest=key, type=type(value), default=None)
     args = parser.parse_args()
     args = vars(args)
     for key, value in args.items():
