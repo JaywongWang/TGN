@@ -8,7 +8,6 @@ import json
 from util import get_iou, get_intersection
 import time
 
-# when printing numpy array, show all
 #np.set_printoptions(threshold=np.inf)
 
 FEATURE_FILE_MAPPING = {

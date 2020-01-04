@@ -33,8 +33,7 @@ def evaluation_metric(options, data_provision, sess, inputs, outputs, split='val
         options, data_provision, sess, inputs, outputs, split=split)
 
     res_file = 'results/%d/temp_grounding_result.json' % options['train_id']
-    if not os.path.exists(os.path.dirname(res_file)):
-        os.makedirs(os.path.dirname(res_file))
+    mkdirs(os.path.dirname(res_file))
 
     print('Writing result json file ...')
     with open(res_file, 'w') as fid:
