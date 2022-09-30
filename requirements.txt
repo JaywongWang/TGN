@@ -1,6 +1,6 @@
 h5py==2.8.0
 imageio==2.4.1
-joblib==0.12.5
+joblib==1.2.0
 numpy==1.15.4
 stemming==1.0
 tensorboard==1.12.0
